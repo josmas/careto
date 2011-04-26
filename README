@@ -1,7 +1,9 @@
 Careto is a pet project to play with express, the web development framework for nodejs.
 
-Careto is a Spanish slang word that means 'Face'. This project intends to create a contacts database, so careto seemed like and apropriate name!
+Careto is a Spanish slang word that means 'Face'. This project intends to create a contacts database, so careto seemed like an apropriate name!
 
 Dependencies: jade, sass, expresso.
+
+Versions: node v0.5.0-pre ||| express 2.3.0
 
 Jos - April 2o11
