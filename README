@@ -2,8 +2,17 @@ Careto is a pet project to play with express, the web development framework for 
 
 Careto is a Spanish slang word that means 'Face'. This project intends to create a contacts database, so careto seemed like an apropriate name!
 
-Dependencies: jade, sass, expresso.
+Dependencies: jade, sass, expresso, mongoose.
 
-Versions: node v0.5.0-pre ||| express 2.3.0
+Versions: node v0.5.0-pre ||| express 2.3.0 ||| mongoose 1.3.0
+
+Have added a test file that stores an object in a MongoDB running locally, so that is a dependency now!
+
+
+
+TODO
+____
+- Look at expresso for testing and maybe replace with Jasmine if possible
+- CRUD for careto objects (now that mongoose is working should be easier!)
 
 Jos - April 2o11
