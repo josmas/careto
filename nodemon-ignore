@@ -1,0 +1,8 @@
+# Ignoring files for automatic restart 
+# with nodemon https://github.com/remy/nodemon/
+
+/vendor/*
+/public/*
+./README
+*.css
+*.swp
