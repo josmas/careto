@@ -16,4 +16,15 @@ ____
 - Look at expresso for testing and maybe replace with Jasmine if possible
 - CRUD for careto objects (now that mongoose is working should be easier!)
 
+
+Created a compass project within this project; instructions to add to pages:
+<head>
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+</head>
+
+
 Jos - April 2o11
