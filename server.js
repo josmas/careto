@@ -37,6 +37,12 @@ app.get('/caretos', function(req, res){
   });
 });
 
+app.get('/caretos/new', function(req, res){
+  res.render('careto_new', {
+    title: 'Add a new Caretos contact'
+  });
+});
+
 // Only listen on $ node app.js
 
 if (!module.parent) {
