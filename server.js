@@ -25,23 +25,8 @@ app.configure('production', function(){
 
 // Routes
 
-app.get('/', function(req, res){
-  res.render('index', {
-    title: 'Careto'
-  });
-});
-
-app.get('/caretos', function(req, res){
-  res.render('caretos', {
-    title: 'Caretos'
-  });
-});
-
-app.get('/caretos/new', function(req, res){
-  res.render('careto_new', {
-    title: 'Add a new Caretos contact'
-  });
-});
+require('./routes/site')(app);
+require('./routes/careto')(app);
 
 // Only listen on $ node app.js
 
