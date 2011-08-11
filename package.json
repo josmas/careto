@@ -1,0 +1,24 @@
+{
+  "name": "careto".
+  "description": "a contacts list that might become something else... who
+  knows?!",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:josmas/careto.git"
+  },
+  "author": "jos <josmasflores@gmail.com> (josmasflores.blogspot.com)",
+  "directories": {
+  },
+  "engines": "0.4 || 0.5",
+  "dependencies": {
+    "express": ">2.3.0",
+    "connect": ">1.3.0",
+    "jade": ">0.11.0",
+    "mongoose": ">1.3.0",
+    "mongodb": ">0.9.3"
+  },
+  "devDependencies": {
+    "expresso": "0.7.3"
+  }
+}
