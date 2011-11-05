@@ -1,5 +1,6 @@
-var express = require('express');
-var app = module.exports = express.createServer();
+var express = require('express'),
+    app     = module.exports = express.createServer(),
+    logger  = require('log4js');
 
 // Configuration
 
