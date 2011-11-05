@@ -1,7 +1,6 @@
 {
-  "name": "careto".
-  "description": "a contacts list that might become something else... who
-  knows?!",
+  "name": "careto",
+  "description": "a contacts list that might become something else... who knows?!",
   "version": "0.0.1",
   "repository": {
     "type": "git",
@@ -10,7 +9,7 @@
   "author": "jos <josmasflores@gmail.com> (josmasflores.blogspot.com)",
   "directories": {
   },
-  "engines": "0.4 || 0.5",
+  "engines": "node >=0.4",
   "dependencies": {
     "express": ">2.3.0",
     "connect": ">1.3.0",
