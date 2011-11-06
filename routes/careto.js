@@ -4,9 +4,19 @@ var mongoose = require('mongoose'),
 module.exports = function(app){
 
   app.get('/caretos', function(req, res){
-    res.render('caretos', {
-      title: 'Caretos',
-      flash: req.flash()
+    var CaretoModel = mongoose.model('Careto', Careto);
+    CaretoModel.find({}, function(err, allCaretos) {
+      if (err){
+        req.flash('error', 'Problems accessing the DB, please try again later');
+        res.redirect('/');
+      }
+      else {
+        res.render('caretos', {
+          title: 'Caretos',
+          allCaretos: allCaretos,
+          flash: req.flash()
+        });
+      }
     });
   });
 
@@ -20,11 +30,13 @@ module.exports = function(app){
   app.post('/careto', function(req, res) {
     Careto.buildCaretoFromRequest(req, function(careto) {
       Careto.saveCareto(careto, function(err){
-        if (err)
+        if (err){
           req.flash('error', 'Your entry could not be saved, please try again later');
+          res.redirect('/');
+        }
         else {
           req.flash('info', 'Your entry has been saved!');
-          res.render('caretos', {
+          res.render('index', {
             title: 'Caretos',
             flash: req.flash()
           });

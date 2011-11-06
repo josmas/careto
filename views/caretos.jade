@@ -1,3 +1,11 @@
 h1= title
 p All the #{title}
+table(id='caretos')
+  tr
+    td Name
+    td Surname
+  - each careto in allCaretos
+    tr
+      td= careto.name
+      td= careto.surname
 a(href='/', title='Go to Homepage') Back to Home
