@@ -2,7 +2,8 @@ module.exports = function(app){
 
   app.get('/', function(req, res){
     res.render('index', {
-      title: 'Careto'
+      title: 'Careto',
+      flash: req.flash()
     });
   });
 

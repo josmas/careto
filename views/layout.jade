@@ -7,6 +7,11 @@ html
     link(rel='stylesheet', href='/stylesheets/ie.css')
   body
     header
+      #flash
+        - if (flash.error != 'undefined')
+          p= flash.error
+        - if (flash.info != 'undefined')
+          p= flash.info
       h1 Welcome to Caretos
       img(src='/images/logo.jpg')
 

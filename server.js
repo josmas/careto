@@ -1,8 +1,7 @@
 var express = require('express'),
     app     = module.exports = express.createServer(),
-    logger  = require('log4js');
-
-// Configuration
+    logger  = require('log4js'),
+    mongoose = require('mongoose');
 
 app.configure(function(){
   app.set('views', __dirname + '/views');
@@ -32,6 +31,7 @@ require('./routes/careto')(app);
 // Only listen on $ node app.js
 
 if (!module.parent) {
+  mongoose.connect('mongodb://localhost/caretos');
   app.listen(3000);
   console.log("Express server listening on port %d", app.address().port);
 }
